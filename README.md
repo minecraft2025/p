@@ -1,3 +1,2 @@
-# 2024
-- https://github.com/cndevwall
-- [https://cndevwall.github.io/2024/sample.html](https://cndevwall.github.io/2024/sample.html)
+[minecraft2025.github.io](https://minecraft2025.github.io
+)
