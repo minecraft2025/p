@@ -16,7 +16,7 @@ jobs:
       - name: Set up Ruby (example)
         run: |
           #choco install ruby
-          refreshenv
+          #refreshenv
           gem install bundler
           bundle install
 
