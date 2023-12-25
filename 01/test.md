@@ -6,3 +6,5 @@ template: post.html
 #Hello
 
 **Heading
+
+Commic TEst
