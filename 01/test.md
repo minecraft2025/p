@@ -7,4 +7,5 @@ template: post.html
 
 **Heading
 
-Commit Test 01
+- Commit Test 01
+- Commit Test 02
