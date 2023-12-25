@@ -9,5 +9,5 @@ template: post.html
 
 - Commit Test 01
 - Commit Test 02
-- Commit Test 01
-- Commit Test 02
+- Commit Test 03
+- Commit Test 04
