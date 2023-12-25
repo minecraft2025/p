@@ -1,5 +1,5 @@
 ---
-layout: sidebar
+layout: default
 title: Maximizing Minecraft Java Edition Performance with Dual CPU Setup
 ---
 
