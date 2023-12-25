@@ -19,10 +19,12 @@ jobs:
           #refreshenv
           gem install bundler
           bundle install
-
-      - name: Build and Deploy (example)
+      - name: Deploy to GitHub Pages
         run: |
-          # Your build and deploy steps here
-defaults:
-  run:
-    shell: 'bash -l {0}'
+          # Assuming your Jekyll site is in the "_site" directory
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git checkout -b main
+          git add -f .  # Force add to overcome the .gitignore
+          git commit -m "Build Jekyll site"
+          git push origin main
