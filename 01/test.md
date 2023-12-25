@@ -5,4 +5,4 @@ template: post.html
 ---
 #Hello
 
-** Heading
+**Heading
