@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: sidebar
 title: Maximizing Minecraft Java Edition Performance with Dual CPU Setup
-template: post.html
+template: sidebar.html
 ---
 
 ### Introduction

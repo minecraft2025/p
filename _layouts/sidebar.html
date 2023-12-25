@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="sidebar">
+    <h2>Navigation</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <small>{{ page.date | date: "%-d %B %Y" }}</small>
+    <h1>{{ page.title }}</h1>
+    <p class="view">by {{ page.author | default: site.author }}</p>
+
+    {{ content }}
+
+    {% if page.tags %}
+      <small>Tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  /* Sidebar Styles */
+  .sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Main Content Styles */
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  /* Navigation Links Styles */
+  .sidebar a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .sidebar a:hover {
+    background-color: #ddd;
+  }
+</style>
