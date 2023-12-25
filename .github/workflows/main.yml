@@ -23,3 +23,6 @@ jobs:
       - name: Build and Deploy (example)
         run: |
           # Your build and deploy steps here
+defaults:
+  run:
+    shell: 'bash -l {0}'
