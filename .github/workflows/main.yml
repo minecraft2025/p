@@ -5,3 +5,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       # Add other steps as needed
+      # Add your build and test steps here
+      - name: Example Step
+        run: echo "This step runs on the self-hosted runner"
