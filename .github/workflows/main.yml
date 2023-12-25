@@ -1,16 +1,25 @@
-name: My Workflow
+name: Default Workflow
 
 on:
   push:
     branches:
-      - main
+      - main  # Change to your main branch name
 
 jobs:
-  my_job:
-    runs-on: self-hosted
+  build:
+    runs-on: self-hosted  # Use a self-hosted runner
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Add other steps as needed
+      - name: Set up Ruby (example)
+        run: |
+          choco install ruby
+          refreshenv
+          gem install bundler
+          bundle install
+
+      - name: Build and Deploy (example)
+        run: |
+          # Your build and deploy steps here
